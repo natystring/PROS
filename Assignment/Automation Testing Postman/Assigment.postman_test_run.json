@@ -1,0 +1,114 @@
+{
+	"id": "8b44a2f4-5727-45ab-bc9b-4361f6725bfc",
+	"name": "Assigment",
+	"timestamp": "2024-01-02T17:52:49.691Z",
+	"collection_id": "31967446-5e2ff3c3-3469-4dbc-8728-bd20d8614a50",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 1,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-01-02T17:52:48.429Z",
+	"totalFail": 6,
+	"results": [
+		{
+			"id": "3be4e3bf-5dd1-4b23-8056-a3f4c4760919",
+			"name": "API Currency Conversion",
+			"url": "http://localhost:8080/public/conversion/USD/EUR?amount=50.00&startDate=2023-12-28",
+			"time": 387,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Validate the API contains the fields sourceCurrency and targetCurrency": false,
+				"Response time is less than 1000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Validate the API contains the fields sourceCurrency and targetCurrency": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				387
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Validate the API contains the fields sourceCurrency and targetCurrency": false,
+					"Response time is less than 1000ms": true
+				}
+			]
+		},
+		{
+			"id": "7b7f36a3-5132-4c91-a695-7c4c84552d45",
+			"name": "API Exchange Rate",
+			"url": "http://localhost:8080/public/exchangerate",
+			"time": 96,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Validate the exchange rate field does not contain null, zero, hyphens, empty or undefined values": false,
+				"Validate the dateRate field does not contain null, zero, hyphens, empty or undefined values": false,
+				"Validate dataRate format": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Validate the exchange rate field does not contain null, zero, hyphens, empty or undefined values": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Validate the dateRate field does not contain null, zero, hyphens, empty or undefined values": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Validate dataRate format": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				96
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Validate the exchange rate field does not contain null, zero, hyphens, empty or undefined values": false,
+					"Validate the dateRate field does not contain null, zero, hyphens, empty or undefined values": false,
+					"Validate dataRate format": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 483,
+	"collection": {
+		"requests": [
+			{
+				"id": "3be4e3bf-5dd1-4b23-8056-a3f4c4760919",
+				"method": "GET"
+			},
+			{
+				"id": "7b7f36a3-5132-4c91-a695-7c4c84552d45",
+				"method": "GET"
+			}
+		]
+	}
+}
